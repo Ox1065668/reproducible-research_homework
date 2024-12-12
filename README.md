@@ -21,19 +21,39 @@ I edited my script by adding the 'set.seed()' function in order to give a reprod
    ![image](https://github.com/user-attachments/assets/f1b96811-1033-4749-a1ff-49193370469f)
 
 
-## 5) (**30 points**) In 2014, Cui, Schlub and Holmes published an article in the *Journal of Virology* (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form **$`V = \alpha L^{\beta}`$**, where $`V`$ is the virion volume in nm<sup>3</sup> and $`L`$ is the genome length in nucleotides.
+## 5) (**30 points**) In 2014, Cui, Schlub and Holmes published an article in the *Journal of Virology* (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form **$`V = \alpha L^{\beta}`$**, where $`V`$ is the virion volume in nm<sup>3</sup> and $`L`$ is the genome length in nucleotides. 
+**PLEASE NOTE: All calculations and code are detailed in the q5_code.R**
 
    **a) Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the `question-5-data` folder). How many rows and columns does the table have? (3 points)\**
 
+33 rows and 13 columns. 
 
    **b) What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points) \**
+
+A log-log transformation, which has been carried out in the code. 
    
    **c) Find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points) \**
-   
+
+Using the linear model based on the log-log transformation made in the previous question, the following values were found:
+
+- $\beta$ = 1.5152, with a p value of 6.44e-10
+- $\alpha$ = 1181.807, with a p value of 2.28e-10
+
+They are both statistically significant, and mirror the same values found in the paper when rounded to 3s.f. 
+
    **d) Write the code to reproduce the figure shown below. (10 points)*
 
   <p align="center">
      <img src="https://github.com/josegabrielnb/reproducible-research_homework/blob/main/question-5-data/allometric_scaling.png" width="600" height="500">
   </p>
 
+The code for the graph can be found in the R script. 
+
   **e) What is the estimated volume of a 300 kb dsDNA virus? (4 points)*
+
+With $\alpha$ = 1181.807 and $\beta$ = 1.5152 
+
+When L = 300; 
+
+V = (1181.807)x(300)<sup>1.5152</sup> = 6697006nm<sup>3</sup>
+
