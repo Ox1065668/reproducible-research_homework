@@ -23,13 +23,17 @@ I edited my script by adding the 'set.seed()' function in order to give a reprod
 
 ## 5) (**30 points**) In 2014, Cui, Schlub and Holmes published an article in the *Journal of Virology* (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form **$`V = \alpha L^{\beta}`$**, where $`V`$ is the virion volume in nm<sup>3</sup> and $`L`$ is the genome length in nucleotides.
 
-   a) Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the `question-5-data` folder). How many rows and columns does the table have? (3 points)\
-   b) What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points) \
-   c) Find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points) \
-   d) Write the code to reproduce the figure shown below. (10 points) 
+   **a) Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the `question-5-data` folder). How many rows and columns does the table have? (3 points)\**
+
+
+   **b) What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points) \**
+   
+   **c) Find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points) \**
+   
+   **d) Write the code to reproduce the figure shown below. (10 points)*
 
   <p align="center">
      <img src="https://github.com/josegabrielnb/reproducible-research_homework/blob/main/question-5-data/allometric_scaling.png" width="600" height="500">
   </p>
 
-  e) What is the estimated volume of a 300 kb dsDNA virus? (4 points) 
+  **e) What is the estimated volume of a 300 kb dsDNA virus? (4 points)*
