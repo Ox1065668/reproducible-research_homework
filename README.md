@@ -1,6 +1,6 @@
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+Link to Q1, 2 and 3: https://github.com/Ox1065668/logistic_growth/tree/main
 
 ## Instructions
 
