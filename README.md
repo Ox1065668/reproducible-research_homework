@@ -32,7 +32,7 @@ I edited my script by adding the 'set.seed()' function in order to give a reprod
 
 A log-log transformation, which has been carried out in the code. 
    
-   **c) Find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points) \**
+   **c) Find the exponent (beta) and scaling factor (alpha) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points) \**
 
 Using the linear model based on the log-log transformation made in the previous question, the following values were found:
 
